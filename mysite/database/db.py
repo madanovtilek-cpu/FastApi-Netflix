@@ -2,7 +2,7 @@ from sqlalchemy.engine import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-DB_URL = 'postgresql://postgres:adminadmin@localhost/FastNetflix'
+DB_URL = 'postgresql://postgres:adminadmin@localhost/postgres'
 engine = create_engine(DB_URL)
 
 SessionLocal = sessionmaker(bind=engine)
